@@ -28,7 +28,28 @@ The design is controlled by a Finite State Machine (FSM) and was verified throug
 
 The transmitter progresses through the following states:
 
-IDLE --> START --> DATA --> STOP --> IDLE ... Repeat ...
+```
+        +------+
+        | IDLE |
+        +------+
+            |
+            v
+       +---------+
+       | START   |
+       +---------+
+            |
+            v
+        +-------+
+        | DATA  |
+        +-------+
+            |
+            v
+        +-------+
+        | STOP  |
+        +-------+
+            |
+            +-----------> IDLE
+```
 
 ## UART Frame Format
 
@@ -114,6 +135,12 @@ This project emphasizes understanding the design process rather than using pre-b
 
 ## Author
 
-Vanessa
+**Vanessa**
 
-Created while learning Verilog HDL and digital design as part of a long-term roadmap toward FPGA development and quantum hardware engineering.
+Designed and implemented as part of a personal digital hardware learning roadmap focused on Verilog HDL, FPGA development, and quantum hardware engineering.
+
+I strive to approach each learning project using professional engineering practices, including version control with GitHub, simulation and verification, clear documentation, and iterative design improvements.
+
+## Acknowledgements
+
+Special thanks to **ChatGPT (OpenAI)** for mentorship, technical guidance, and code review throughout this project. Discussions emphasized understanding engineering concepts and design decisions while encouraging industry-style development practices.
