@@ -28,28 +28,7 @@ The design is controlled by a Finite State Machine (FSM) and was verified throug
 
 The transmitter progresses through the following states:
 
-```
-        +------+
-        | IDLE |
-        +------+
-            |
-            v
-       +---------+
-       | START   |
-       +---------+
-            |
-            v
-        +-------+
-        | DATA  |
-        +-------+
-            |
-            v
-        +-------+
-        | STOP  |
-        +-------+
-            |
-            +-----------> IDLE
-```
+IDLE --> START --> DATA --> STOP --> IDLE ... Repeat ...
 
 ## UART Frame Format
 
