@@ -29,9 +29,9 @@ The design is controlled by a Finite State Machine (FSM) and was verified throug
 The transmitter progresses through the following states:
 
 ```
-        +------+
-        | IDLE |
-        +------+
+        +------+ <--
+        | IDLE |    |
+        +------+ ---
             |
             v
        +---------+
