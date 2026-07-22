@@ -26,7 +26,7 @@ The design is controlled by a Finite State Machine (FSM) and was verified throug
 
 ## State Machine
 
-The transmitter progresses through the following states:
+The transmitter progresses through the following states (assuming the possiblity of staying on reset):
 
 ```
         +------+ <--
